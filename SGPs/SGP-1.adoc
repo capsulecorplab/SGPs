@@ -1,0 +1,349 @@
+[cols="6", options="header"]
+|===
+|SGP
+|Title
+|Author
+|Status
+|Track
+|Created
+
+|1
+|The Space Governance Proposal Process
+|Sean Marquez (@capsulecorplab)
+|Pre-proposal
+|Meta
+|Created 2019-11-10
+|===
+
+== SGP-1: The Space Governance Proposal Process
+
+*Version 0.1.0*
+
+== What is an SGP?
+
+SGP stands for Space Governance Proposal. An SGP is a document that
+details a change to the management, allocation, or use of shared
+resources owned or directly influenced by the Space Decentral Network.
+All SGPs must be consistent with the goals and values put forth in
+link:SGP-0.adoc[SGP-0] (the Space Decentral Manifesto) and compliant
+with the requirements outlined in this document, SGP-1. The SGP author
+is responsible for building consensus within the community for their
+SGP and documenting dissenting opinions.
+
+== SGP process rationale
+
+The purpose of the Space Governance Proposal Process ("the SGP
+process") is to provide a structured process for making changes to the
+shared resources of the Space Decentral Network. For these shared
+resources, governance processes are needed to grant or deny access and
+approve or reject proposed changes. By creating a fair, lightweight,
+and transparent SGP process, the SGP-1 authors hope to give FTL holders
+a meaningful say in the governance of the Space Decentral Association
+and the Space Decentral Network and increase the chances of success for
+both.
+
+== Proposal workflow
+
+Parties directly involved in the process are the _SGP author_ (you), the
+_SGP Editors_, the _Space Decentral Association (“the Association”)_,
+and _Space Decentral Network voters_.
+
+Proposals follow this workflow:
+
+* Stage I: Select SGP Track
+* Stage II: Pre-proposal
+* Stage III: Draft Proposal
+* Stage IV: Community Review
+* Stage V: Final Proposal
+* Stage VI: Space Decentral Network Vote
+
+During Stage III SGP Editors will review proposals for formatting,
+legibility, and compliance with SGP-1, referring to SGP-1 as the basis
+for accepting, denying, or requesting modifications to a proposal. The
+role of SGP Editors is further described in the SGP Editors section.
+
+At a high level, the SGP-1 workflow looks like this:
+
+image:../images/SGP-1/SGP-1_1-2-1.png[image]
+
+=== Stage I: Select SGP Track
+
+Before you spend time working on a proposal, make sure the proposal
+complies with SGP-1 and has a chance of passing review by the SGP
+Editors and your peers. Review the SGP tracks and their requirements
+then select the track that you think is best for your proposal. If your
+proposal meets the requirements, it has a much greater chance of being
+accepted by SGP Editors and approved by Space Decentral Network voters.
+
+There are four tracks that an SGP can be categorized into. Select the
+one you think is best for your SGP:
+
+* Association: proposals for making changes to the Association
+* Finance: proposals for transferring funds from the Association
+multisig
+* Meta: proposals for changing SGP-0 or SGP-1 (“changing the way things
+are changed”)
+* Proclamations: proposals for making a public statement on behalf of
+the Space Decentral Network
+
+Proposals that cannot be categorized into one of these tracks will
+likely be denied by SGP Editors. At the discretion of SGP Editors, a
+proposal may be categorized as “Other” until a new track is approved as
+part of a Meta SGP.
+
+In addition to the requirement that all SGPs must be consistent with
+SGP-0, each track has its own requirements for SGPs as follows:
+
+*Association* +
+Proposals made to the Association track must affect one or more of the
+following:
+
+* Association-owned assets, excluding funds held in the Association
+multisig
+* E.g. “Should the Space trademark be dedicated to the public domain?”
+* Association policies
+* E.g. “Should the Space Code of Conduct be updated to include a
+community-wide ban on Carlos Matos memes?”
+
+*Finance* +
+Proposals made to the Finance track must affect the movement of assets
+held by the
+https://wiki.aragon.org/association/multisigs/overview/[Association
+multisig]. The Association will have discretion over which multisig
+transfers must go through the SGP process.
+
+* All code and content funded through the SGP process must be released
+under one of the following licenses:
+* Creative Commons (CC0, CC-BY, CC-SA, CC-BY-SA)
+* GPL
+* SGPL
+* MIT
+
+*Meta* +
+Proposals made to the Meta track must affect changes to SGP-0 or SGP-1.
+The Association has the power to add and remove SGP Editors and fix
+errata in SGP-0 or SGP-1 on an as-needed basis without going through the
+SGP process. All other proposals to modify SGP-0 or SGP-1 should be made
+to the Meta track. * E.g. “Should the min. acceptance quorum of Space
+Decentral Network votes be increased?”
+
+*Proclamations* +
+Proposals made to the Proclamations track must be consistent with the
+Space Decentral Manifesto. * E.g. “The Space Decentral Network declares
+February 10th to be Space Day.”
+
+=== Stage II: Pre-proposal
+
+During Stage II you should seek feedback on your SGP idea by sharing it
+with your peers in the Space Decentral community and soliciting their
+feedback. Examples of appropriate venues to share your SGP idea include:
+
+* The https://aragon.chat/channel/governance[#governance channel] in
+Space Chat
+* The https://research.aragon.org/c/community[Community category] in the
+Space forum
+* The https://github.com/spacedecentral/SGPs/issues[Issues section] of the
+https://github.com/spacedecentral/SGPs[SGP repo]
+
+Be open-minded and respectful of all feedback you receive. Adjust your
+proposal to address serious concerns as they come up to increase the
+odds of your proposal passing review in later stages.
+
+=== Stage III: Draft
+
+After you have asked the Space Decentral community whether an idea has
+any chance of support and have received sufficient feedback to feel
+confident going forward, you can create a draft SGP as a pull request
+to the SGP repo. Use a template from the Templates section below to
+ensure you are including all the necessary information. The draft SGP
+file should be given a temporary name, which the SGP Editor will rename
+when the SGP is assigned a number.
+
+*Templates* +
+Below is a list of SGP templates for each track. Copy the template for
+the track your SGP is in, fill it out, and submit the pull request with
+your SGP for review. Sections marked as “required” in the template must
+be completed. Note that all proposals must be licensed CC-0.
+
+* link:../templates/association_template.md[Association]
+* link:../templates/finance_template.md[Finance]
+* link:../templates/meta_template.md[Meta]
+* link:../templates/proclamation_template.md[Proclamations]
+
+To make a Meta track change, you must:
+
+1.  Create and submit a pull request changing either SGP-0 or SGP-1.
+2.  In a _separate_ pull request, create a new file in the SGPs folder
+of the SGPs repo.
+3.  Add a link to the pull request created in step 1 to the new file
+created in step 2.
+4.  Submit the new file from step 2 as a pull request to the SGPs repo.
+This will be the SGP pull request. If the SGP is approved by FTL
+holders, the pull request created in step 1 will be merged. If the
+proposal is rejected and withdrawn, the pull request created in step 1
+will be closed.
+
+=== Stage IV: Community Review
+
+After an SGP has been submitted as a draft to the SGPs repo, it must
+undergo a Community Review period that starts three weeks before the
+next Space Decentral Network vote begins and lasts for one week. Draft SGPs must
+be submitted as a pull request to the SGPs repo before the Community
+Review period begins to be considered for the next Space Decentral Network vote.
+All draft SGPs that have an open pull request at the time the Community
+Review begins will automatically be moved to Stage IV for consideration.
+
+During the Community Review period, the draft SGP author will have a
+chance to respond to feedback and make changes to their proposal based
+on the feedback they have received to increase the likelihood of the
+proposal passing. At the end of the Community Review period, SGP Editors
+will perform a final review of the proposal.
+
+* If agreeable, an SGP Editor will assign the SGP a number (generally
+the PR number related to the SGP). The SGP Editors will not unreasonably
+deny assigning a number to the SGP.
+* Reasons for denying an SGP number and closing the pull request include
+being too unfocused, too broad, duplication of effort, being technically
+unsound, not providing proper motivation or addressing concerns by
+reviewers, or not in compliance with SGP-1.
+
+After a proposal in Stage IV has been thoroughly reviewed, you may
+finalize your proposal and request that an SGP Editor moves the proposal
+from Stage IV to Stage V. If you do not finalize the proposal and
+request to move the proposal to Stage V before Stage V is scheduled to
+begin, SGP Editors will consider the proposal withdrawn and close the
+pull request when Stage V begins.
+
+* If agreeable, the SGP Editor will move the proposal from Stage IV to
+Stage V by updating the status in the SGP.
+* A request to move the proposal from Stage IV to Stage V will be denied
+if material changes are still expected to be made to the draft. No
+changes can be made to an SGP while it is in Stage V or VI.
+
+=== Stage V: Final Proposal
+
+An SGP in Stage V is the final version that will appear on the ballot
+during the next Space Decentral Network vote. SGPs that move from Stage
+IV to Stage V are reviewed by the Space Association Board of Directors
+and, if approved during the pre-vote review session, are merged into
+the SGPs repo and added to
+https://github.com/spacedecentral/SGPs/tree/master/votes[the list] of
+SGPs that will be submitted to the Space Decentral Network for a vote
+in Stage VI. Approval or rejection of an SGP during Stage V is made at
+the discretion of the Association board.
+
+The Stage V Association board review session begins two weeks before
+the next Space Decentral Network vote is scheduled to begin and lasts
+for one week.
+
+=== Stage VI: Space Decentral Network Vote
+
+All SGPs that have moved to Stage VI since the last Space Decentral
+Network vote and have been approved by the Association board are
+included on the ballot in the current vote. During the vote, Space
+Decentral Network voters will review proposals on the ballot and cast
+their votes.
+
+If a vote on an SGP produces a Rejected result, then the status of the
+SGP will be updated to "Rejected" and no further action is necessary. If
+a vote on an SGP produces an Approved result, then the SGP will either
+be executed automatically by the Space Decentral Network or else
+dutifully executed by a manager designated in the SGP (or designated by
+the Association board if no manager is designated in the SGP). Any pull
+requests referenced in a Meta track proposal approved in Stage VI will
+be merged by an SGP Editor, and the result of the Space Decentral
+Network vote will be recorded in the corresponding SGP file by an SGP
+Editor.
+
+== Space Decentral Network Votes
+
+Space Decentral Network votes take place quarterly on the following days,
+starting at 16:00 UTC time and lasting for 48 hours:
+
+* Fourth Thursday of January
+* Fourth Thursday of April
+* Fourth Thursday of July
+* Fourth Thursday of October
+
+*Support required* +
+With the exception of Meta track proposals, the minimum support required
+for approval is >50% of all votes cast, an “absolute majority”. The
+minimum acceptance quorum required for approval is >0% (at least one
+positive vote needs to be cast). Votes are token-weighted, so 10^-18 FTL
+(the smallest possible fraction of one FTL) equals one vote, and at
+least 10^-18 FTL is required to vote.
+
+For Meta track proposals, the minimum support required for approval is
+>66.6666666666666666% of all votes cast, a “supermajority”. The minimum
+acceptance quorum required for approval is >0% (at least one positive
+vote needs to be cast). Votes are token-weighted, so 10^-18 FTL (the
+smallest possible fraction of one FTL) equals one vote, and at least
+10^-18 FTL is required to vote.
+
+*Emergency Vote* +
+The Association can call an emergency Space Decentral Network vote or
+re-schedule a vote at any time with minimum 48 hours notice by a
+unanimous approval vote of the Association board. In case of emergency,
+immediately following approval by the board, the Association will make a
+best effort to notify FTL holders of the start date and time of the vote
+using these communication channels:
+
+* The
+https://github.com/spacedecentral/SGPs/tree/master/emergency_votes[Emergency
+Votes folder]
+* https://aragon.chat/channel/announcements[#announcements channel] in
+
+If the Space Decentral Association approves re-scheduling a vote, the
+new start date of the vote must be no more than 14 days later than the
+previous start date of the vote. The Space Decentral Association cannot
+approve re-scheduling the same vote more than twice.
+
+== SGP Editors
+
+SGP Editors are experienced and active members of the Space Decentral
+community selected by the Association to manage the SGP workflow. SGP
+Editors are not gatekeepers to the proposal system. SGP Editors exist
+to make proposals submitted to the SGP repo easier to review.
+
+SGP Editors have two responsibilities:
+
+* Review proposals
+* Move proposals from Stage IV through to Stage V
+
+*Review proposals* +
+SGP Editors review proposals and accept, deny, or request modifications
+to them based on formatting, legibility, and compliance with SGP-1.
+
+*Move proposals from Stage IV through to Stage V* +
+After a proposal author submits a pull request with their proposal in
+Stage III and has it reviewed by the community in Stage IV, an SGP
+Editor will review the proposal to make sure it is compliant with SGP-1.
+If so, the SGP Editor will assign an SGP number to the proposal. After a
+proposal in Stage IV has been thoroughly reviewed, the author can
+request that an SGP Editor moves the proposal from Stage IV to Stage V.
+
+The current SGP Editors are:
+
+* Sean Marquez ([@capsulecorplab](https://github.com/capsulecorplab))
+
+== History
+
+This document borrows from
+https://github.com/aragon/AGPs/blob/master/AGPs/AGP-1.md[Aragon's AGP-1]
+written by John Light, which itself was derived from 
+https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1.md[Ethereum’s
+EIP-1] written by Martin Becze and Hudson Jameson, which was derived
+from
+https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki[Bitcoin's
+BIP-0001] written by Amir Taaki, which in turn was derived from
+https://www.python.org/dev/peps/pep-0001/[Python's PEP-0001]. In many
+places text was simply copied and modified. Although the PEP-0001 text
+was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are
+not responsible for its use in the Space Governance Process, and should
+not be bothered with governance questions specific to Space Decentral or
+the SGP process. Please direct all comments and questions to the SGP
+Editors.
+
+== Copyright
+
+This document is released under the terms and conditions of the https://creativecommons.org/publicdomain/zero/1.0/[CC0] license.
